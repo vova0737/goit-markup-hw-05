@@ -284,6 +284,7 @@ body {
 
 .job-item {
   display: flex;
+  position: relative;
   margin-bottom: 0px;
   padding-left: 0;
   margin-top: 0;
@@ -292,6 +293,29 @@ body {
 
 .job-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.job-label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px; 
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.job-name {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* team section */
@@ -366,6 +390,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-item:not(:last-child) {
@@ -416,6 +441,7 @@ body {
 
 .clients-icon {
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
