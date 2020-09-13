@@ -176,8 +176,7 @@ body {
   height: 600px;
   max-width: 1600px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   text-align: center;
